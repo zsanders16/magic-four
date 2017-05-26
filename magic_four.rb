@@ -8,10 +8,10 @@ def welcome
 end
 
 def get_user_response
-    puts "Please input a positive number."
+    puts "Please input a positive number or quit to end."
 
     user_number = gets.chomp
-    
+    exit if user_number.downcase == 'quit'
     
     if validate?(user_number)
         display_results(user_number.to_i)
