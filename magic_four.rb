@@ -26,6 +26,8 @@ end
 def display_results(number)
     if (number == 4)
         puts "And 4 is the magic number."
+        sleep(4)
+        get_user_response
     else
         number_length = number.humanize.length
         puts "#{number} is #{number_length}"
