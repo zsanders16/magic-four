@@ -2,7 +2,7 @@ require 'humanize'
 
 def welcome
     puts `clear`
-    puts "Welcome to 4 is the magic number."
+    puts "Welcome to '4 Is The Magic Number'."
     
     get_user_response
 end
@@ -25,7 +25,7 @@ end
 
 def display_results(number)
     if (number == 4)
-        puts "And the magic number is 4."
+        puts "And 4 is the magic number."
     else
         number_length = number.humanize.length
         puts "#{number} is #{number_length}"
