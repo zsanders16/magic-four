@@ -1,6 +1,7 @@
 require 'humanize'
 
 def welcome
+    puts `clear`
     puts "Welcome to 4 is the magic number."
     
     get_user_response
